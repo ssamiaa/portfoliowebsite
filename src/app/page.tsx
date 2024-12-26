@@ -1,8 +1,20 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+
 export default function Home() {
     return (
-      <section className="flex items-center justify-center h-screen">
-        <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-      </section>
-    );
+        <>
+            <Header />
+            <Hero />
+            <About />
+            <Projects/>
+            <Experience/>
+            <Footer />
+        </>
+      );
   }
   
