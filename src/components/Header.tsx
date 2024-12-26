@@ -58,12 +58,6 @@ export default function Header() {
         >
           Experience
         </Link>
-        <Link
-          href="#contact"
-          className="text-gray-700 font-medium hover:text-gray-900 transition"
-        >
-          Connect
-        </Link>
       </nav>
     </header>
   );
