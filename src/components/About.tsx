@@ -68,7 +68,7 @@ export default function About() {
           <ul className="list-disc pl-5 space-y-2">
             <li>Reading</li>
             <li>Art & Design </li>
-            <li>walking</li>
+            <li>Nature Walking</li>
           </ul>
         </div>
 

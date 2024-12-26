@@ -11,15 +11,15 @@ export default function Hero() {
         {/* Type Animation */}
       <TypeAnimation
         sequence={[
-          "Hi, I'm Samia", // Type this out
-          2000, // Wait for 2 seconds
-          "Welcome to My Digital Playground!", // Replace with this
-          2000, // Wait for 2 seconds
+          "Hi, I'm Samia",
+          2000, 
+          "Welcome to My Digital Playground!", 
+          2000, 
         ]}
-        speed={5} // Typing speed (higher is slower)
+        speed={5} 
         className="text-6xl font-extrabold mb-6 drop-shadow-md"
-        cursor={true} // Show a blinking cursor
-        repeat={Infinity} // Do not repeat the animation
+        cursor={true} 
+        repeat={Infinity} 
       />
 
       {/* Description */}
