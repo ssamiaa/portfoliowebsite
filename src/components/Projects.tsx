@@ -47,7 +47,7 @@ const projectData = [
   },
   {
     title: "Study Track",
-    category: "Personal Project",
+    category: "Personal Projects",
     description: "A course management application that tracks learning progress and confidence levels using a visual dashboard.",
     tags: ["JAVA"],
     image: "/projects/studytrack.png",
@@ -55,7 +55,7 @@ const projectData = [
   }
 ];
 
-const categories = ["All", "Design", "EML", "Data Analysis", "Personal Project"];
+const categories = ["All", "Design", "EML", "Data Analysis", "Personal Projects"];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -71,24 +71,24 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-8">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">
-          stuff I&apos;ve made
+          My Builds 
         </h2>
 
         {/* Categories */}
-        <div className="flex justify-center gap-4 mb-8 items-center">
-          {categories.map((category) => (
+        <div className="flex justify-center gap-8 mb-8">
+        {categories.map((category) => (
             <button
-              key={category}
-              className={`px-4 py-2 rounded-full border ${
+            key={category}
+            className={`px-4 py-2 rounded-full font-medium transition-colors ${
                 selectedCategory === category
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-100 text-gray-800"
-              } hover:bg-blue-200`}
-              onClick={() => setSelectedCategory(category)}
+                ? "bg-blue-500 text-white"
+                : "text-gray-800 hover:bg-gray-100 hover:text-blue-500"
+            }`}
+            onClick={() => setSelectedCategory(category)}
             >
-              {category}
+            {category}
             </button>
-          ))}
+        ))}
         </div>
 
         {/* Project Cards */}

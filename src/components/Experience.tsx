@@ -47,10 +47,10 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 bg-gray-50 text-gray-900 bg-origin-padding">
+    <section id="experience" className="py-16 bg-gray-50 text-blue-900 bg-origin-padding">
       <div className="max-w-5xl mx-auto px-8">
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold  text-center mb-8">
           What I’ve been up to
         </h2>
 

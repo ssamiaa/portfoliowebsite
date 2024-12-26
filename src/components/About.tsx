@@ -9,11 +9,11 @@ export default function About() {
       className="min-h-screen py-16 bg-gray-50 text-gray-900 flex items-center justify-center"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-2 grid-rows-3 gap-8">
-        {/* Top Left: Currently a... */}
+        {/* Top Left: Current Positions */}
         <div className="bg-white shadow-md p-6 rounded-lg border border-gray-200">
           <h3 className="text-xl font-bold text-blue-600 mb-4">Currently a...</h3>
           <ul className="list-disc pl-5 space-y-2">
-                <li>BSc. Computer Science Student @ UBC</li>
+                <li>Computer Science Student @ UBC</li>
                 <li>UX/UI Designer @ Emerging Media Lab</li>
                 <li>Web Developer @ UBC Orbit</li>
                 <li>Partnerships Director @ UBC UXHub</li>
@@ -35,22 +35,21 @@ export default function About() {
           />
         </div>
 
-        {/* Middle Left: Hi, I'm Samia */}
+        {/* Middle Left: Type Animation */}
         <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white font-light p-6 rounded-lg shadow-md flex items-center justify-center">
           <TypeAnimation
             sequence={[
                 "I create things...", 2000,
                 "and break them sometimes.", 2000
-
             ]}
             speed={50}
             className="text-2xl font-extrabold text-center"
             cursor={true}
-            repeat={0}
+            repeat={Infinity}
           />
         </div>
 
-        {/* Middle Right: Talk to me about... */}
+        {/* Middle Right: Interests */}
         <div className="bg-white shadow-md p-6 rounded-lg border border-gray-200">
           <h3 className="text-xl font-bold text-blue-600 mb-4">
             Talk to me about...
@@ -63,13 +62,13 @@ export default function About() {
           </ul>
         </div>
 
-        {/* Bottom Left: I like to... */}
+        {/* Bottom Left: Hobbies */}
         <div className="bg-white shadow-md p-6 rounded-lg border border-gray-200">
-          <h3 className="text-xl font-bold text-blue-600 mb-4">I also like...</h3>
+          <h3 className="text-xl font-bold text-blue-600 mb-4">I enjoy...</h3>
           <ul className="list-disc pl-5 space-y-2">
-            <li> read </li>
-            <li> binge watch series </li>
-            <li> draw </li>
+            <li>Reading</li>
+            <li>Art & Design </li>
+            <li>walking</li>
           </ul>
         </div>
 
