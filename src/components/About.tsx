@@ -2,12 +2,30 @@
 
 import { TypeAnimation } from "react-type-animation";
 
+
 export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen py-16 bg-gray-50 text-gray-900 flex items-center justify-center"
+      className="min-h-screen py-16 bg-gray-50 text-gray-900 flex flex-col items-center"
     >
+
+       {/* Typing Animation */}
+      <div className="mb-8">
+        <TypeAnimation
+          sequence={[
+            "Welcome to My Digital Playground!",  
+            2000,                                
+            "",                                  
+            1000,                                
+          ]}
+          speed={50}                             
+          className="text-4xl font-bold text-center text-blue-900"
+          cursor={true}                          
+          repeat={Infinity}                      
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto grid grid-cols-2 grid-rows-3 gap-8">
         {/* Top Left: Current Positions */}
         <div className="bg-white shadow-md p-6 rounded-lg border border-gray-200">
