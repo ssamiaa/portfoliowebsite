@@ -1,6 +1,9 @@
 "use client";
 
 import { TypeAnimation } from "react-type-animation";
+import React from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 
 
 export default function About() {
@@ -40,7 +43,7 @@ export default function About() {
           </ul>
         </div>
 
-        {/* Top Right: Type Animation */}
+        {/* Top Right: Type Animation
         <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white p-6 rounded-lg shadow-md flex items-center justify-center">
           <TypeAnimation
             sequence={[
@@ -51,10 +54,20 @@ export default function About() {
             className="text-2xl font-bold text-center"
             repeat={Infinity}
           />
+        </div> */}
+
+        {/* Top Right: Walking Animation */}
+        <div className="flex items-center justify-center">
+          <DotLottieReact
+            src="https://lottie.host/094732f4-cef9-4adf-ad71-9b3990eca8dd/mXtEiZL9Jx.lottie"
+            loop
+            autoplay
+            style={{ width: 200, height: 200 }}
+          />
         </div>
 
         {/* Middle Left: Type Animation */}
-        <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white font-light p-6 rounded-lg shadow-md flex items-center justify-center">
+        {/* <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white font-light p-6 rounded-lg shadow-md flex items-center justify-center">
           <TypeAnimation
             sequence={[
                 "I create things...", 2000,
@@ -64,6 +77,15 @@ export default function About() {
             className="text-2xl font-extrabold text-center"
             cursor={true}
             repeat={Infinity}
+          />
+        </div> */}
+
+        <div className="flex items-center justify-center">
+          <DotLottieReact
+            src="https://lottie.host/13e6223e-7dbf-439b-a5aa-43d4a0438f42/M3dUHnAW7z.lottie"
+            loop
+            autoplay
+            style={{ width: 200, height: 200 }}
           />
         </div>
 
@@ -90,7 +112,7 @@ export default function About() {
           </ul>
         </div>
 
-        {/* Bottom Right: Another Type Animation */}
+        {/* Bottom Right: Another Type Animation
         <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white font-light p-6 rounded-lg shadow-md flex items-center justify-center">
           <TypeAnimation
             sequence={[
@@ -101,9 +123,31 @@ export default function About() {
             className="text-2xl font-bold text-center"
             repeat={Infinity}
           />
+        </div> */}
+
+        {/* Middle Left: Drawing Animation */}
+        <div className="flex items-center justify-center">
+          <DotLottieReact
+            src="https://lottie.host/1fd191df-ab50-4ca3-b8de-500d08c562b4/G4i2IUTit3.lottie"
+            loop
+            autoplay
+            style={{ width: 200, height: 200 }}
+          />
         </div>
       </div>
     </section>
   );
 }
+// import React from 'react';
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+// const App = () => {
+//   return (
+//     <DotLottieReact
+//       src="https://lottie.host/1fd191df-ab50-4ca3-b8de-500d08c562b4/G4i2IUTit3.lottie"
+//       loop
+//       autoplay
+//     />
+//   );
+// };
 
