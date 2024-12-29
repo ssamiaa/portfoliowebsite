@@ -75,14 +75,14 @@ export default function Projects() {
         </h2>
 
         {/* Categories */}
-        <div className="flex justify-center gap-8 mb-8">
+        <div className="bg-gray-100/70 backdrop-blur-md rounded-full shadow-sm px-6 py-2 flex gap-8 items-center justify-center mx-auto max-w-fit mb-8">
         {categories.map((category) => (
             <button
             key={category}
-            className={`px-4 py-2 rounded-full font-medium transition-colors ${
+            className={`text-sm font-medium px-4 py-2 rounded-full transition-all ${
                 selectedCategory === category
                 ? "bg-blue-500 text-white"
-                : "text-gray-800 hover:bg-gray-100 hover:text-blue-500"
+                : "text-gray-800 hover:bg-gray-100 hover:text-blue-500 active:bg-blue-500 active:text-white"
             }`}
             onClick={() => setSelectedCategory(category)}
             >
@@ -103,7 +103,7 @@ export default function Projects() {
             href={project.external} // Link to navigate to
             target="_blank"
             rel="noopener noreferrer"
-            className="min-w-[250px] max-w-[250px] bg-white shadow-md p-4 rounded-lg border border-gray-200 flex-shrink-0 hover:scale-105 transition-transform no-underline"
+            className="min-w-[250px] max-w-[250px] h-[300px] bg-white shadow-md p-4 rounded-lg border border-gray-200 flex-shrink-0 hover:scale-105 transition-transform no-underline"
             >
             <img
                 src={project.image}
