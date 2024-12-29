@@ -2,7 +2,7 @@
 # **Samia's Portfolio**
 
 
-#### Welcome to my personal portfolio website! 🎨💻 This platform showcases my journey as a computer science student featuring my projects, experiences, and interests. It’s being designed to reflect my passion for creativity, technology, and user-centric design.
+#### Welcome to my new personal portfolio website! 🎨💻 This platform showcases my journey as a computer science student featuring my projects, experiences, and interests. It’s being designed to reflect my passion for creativity, technology, and user-centric design.
 ---
 ## **Features**
 
