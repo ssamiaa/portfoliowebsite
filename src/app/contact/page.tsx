@@ -1,13 +1,25 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
+    const router = useRouter();
+    
   return (
     <section
       id="contact"
       className="min-h-screen py-16 bg-gray-50 flex items-center justify-center"
     >
+ 
+
       <div className="max-w-4xl mx-auto px-8">
+        {/* Back Button */}
+        <button
+          onClick={() => router.back()}
+          className="mb-8 bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transition-all"
+        >
+          ← Back
+        </button>
+        
         {/* Heading */}
         <h2 className="text-4xl font-extrabold text-center mb-6 text-blue-900">
           Let&apos;s Connect! 
