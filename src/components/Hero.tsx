@@ -13,7 +13,7 @@ export default function Hero() {
         sequence={[
           "Hi, I'm Samia",
           2000, 
-          "Welcome to My Digital Playground!", 
+          "", 
           2000, 
         ]}
         speed={5} 
@@ -29,10 +29,10 @@ export default function Hero() {
 
       {/* Button */}
       <a
-        href="https://www.linkedin.com/in/samiasajid2"
+        href="#about"
         className="bg-white text-gray-800 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:bg-gray-100 transition-all duration-300"
       >
-        Connect
+        Explore
       </a>
     </section>
   );
