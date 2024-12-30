@@ -103,7 +103,7 @@ export default function Projects() {
             href={project.external} // Link to navigate to
             target="_blank"
             rel="noopener noreferrer"
-            className="min-w-[250px] max-w-[250px] h-[300px] bg-white shadow-md p-4 rounded-lg border border-gray-200 flex-shrink-0 hover:scale-105 transition-transform no-underline"
+            className="w-[280px] h-[320px] bg-white shadow-md p-4 rounded-lg border border-gray-200 flex-shrink-0 hover:scale-105 transition-transform no-underline"
             >
             <img
                 src={project.image}
@@ -111,7 +111,7 @@ export default function Projects() {
                 className="rounded-md mb-2 w-full h-[120px] object-cover"
             />
             <h3 className="text-md font-semibold mb-1">{project.title}</h3>
-            <p className="text-xs text-gray-600 mb-2 line-clamp-2">
+            <p className="text-xs text-gray-600 mb-2 ">
                 {project.description}
             </p>
             <div className="flex flex-wrap gap-1 mb-2">
