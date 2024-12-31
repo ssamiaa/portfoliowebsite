@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      filter: {
+        grain: "url(#grain-filter)",
+      },
     },
   },
   plugins: [],

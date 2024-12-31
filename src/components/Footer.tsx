@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-6">
+    <footer className="bg-[rgb(14,2,32)] text-white p-6">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-4">
         <p className="text-sm">© {new Date().getFullYear()} Samia. All rights reserved.</p>
         {/* Social Icons */}

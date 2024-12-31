@@ -25,11 +25,11 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 flex justify-center ${
-        showBackground ? "bg-gray-100 shadow-md" : "bg-transparent"
+        showBackground ? "bg-gray-10 shadow-md" : "bg-transparent"
       } transition-all duration-300`}
     >
       <nav
-        className={`rounded-full bg-gray-100/70 backdrop-blur-md flex gap-8 px-6 py-2 items-center shadow-sm mt-4 ${
+        className={`rounded-full bg-gray-200 backdrop-blur-md flex gap-8 px-6 py-2 items-center shadow-sm mt-4 ${
           showBackground ? "mt-2" : ""
         }`}
       >

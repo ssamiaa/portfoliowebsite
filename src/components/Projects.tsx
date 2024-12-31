@@ -67,10 +67,10 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" className="py-16 bg-gray-50 text-gray-900 bg-clip-padding">
+    <section id="projects" className="pt-0 pb-8 text-gray-900 bg-clip-padding">
       <div className="max-w-7xl mx-auto px-8">
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">
+        <h2 className="text-3xl font-bold text-center text-purple-950 mb-8">
           My Builds 
         </h2>
 
@@ -81,8 +81,8 @@ export default function Projects() {
             key={category}
             className={`text-sm font-medium px-4 py-2 rounded-full transition-all ${
                 selectedCategory === category
-                ? "bg-blue-500 text-white"
-                : "text-gray-800 hover:bg-gray-100 hover:text-blue-500 active:bg-blue-500 active:text-white"
+                ? "bg-purple-950 text-white"
+                : "text-gray-800 hover:bg-gray-100 hover:text-purple-900 active:bg-purple-900 active:text-white"
             }`}
             onClick={() => setSelectedCategory(category)}
             >
@@ -100,7 +100,7 @@ export default function Projects() {
         {filteredProjects.map((project, index) => (
             <a
             key={index}
-            href={project.external} // Link to navigate to
+            href={project.external} 
             target="_blank"
             rel="noopener noreferrer"
             className="w-[280px] h-[320px] bg-white shadow-md p-4 rounded-lg border border-gray-200 flex-shrink-0 hover:scale-105 transition-transform no-underline"
@@ -118,7 +118,7 @@ export default function Projects() {
                 {project.tags.map((tag, idx) => (
                 <span
                     key={idx}
-                    className="text-[10px] bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full"
+                    className="text-[10px] bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full"
                 >
                     {tag}
                 </span>

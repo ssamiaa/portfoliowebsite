@@ -47,10 +47,10 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 bg-gray-50 text-blue-900 bg-origin-padding">
+    <section id="experience" className="py-16 text-purple-950 bg-origin-padding">
       <div className="max-w-5xl mx-auto px-8">
         {/* Heading */}
-        <h2 className="text-3xl font-bold  text-center mb-8">
+        <h2 className="text-3xl font-bold text-purple-950 text-center mb-8">
           What I’ve been up to
         </h2>
 
@@ -63,17 +63,21 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="relative flex items-start"
+              className="relative flex items-start group"
             >
               {/* Node Dot */}
-              <div className="absolute left-3 top-0 bg-blue-500 w-6 h-6 rounded-full border-4 border-white"></div>
+              <div className="absolute left-3 top-0 bg-purple-950 w-6 h-6 rounded-full border-4 border-white"></div>
 
               {/* Node Card */}
-              <div className="ml-12 bg-white shadow-md p-6 rounded-lg border border-gray-200 hover:scale-105 transition-transform w-full">
+              <div className="ml-12 bg-white shadow-md p-6 rounded-lg border border-gray-200 transition-all duration-300 w-full group-hover:scale-105 group-hover:min-h-[100px]">
                 <h3 className="text-lg font-semibold">{exp.role}</h3>
                 <p className="text-sm text-gray-600">{exp.organization}</p>
                 <p className="text-sm text-gray-500 italic">{exp.duration}</p>
-                <p className="text-sm mt-2">{exp.description}</p>
+
+                {/* Description */}
+                <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {exp.description}
+                </p>
               </div>
             </div>
           ))}
@@ -82,4 +86,3 @@ export default function Experience() {
     </section>
   );
 }
-

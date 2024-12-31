@@ -1,13 +1,16 @@
 "use client";
 
 import { TypeAnimation } from "react-type-animation";
+import GradientBackground from "@/components/GradientBackground";
 
 export default function Hero() {
     return (
       <section
         id="home"
-        className="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-950 via-blue-900 to-blue-600 text-white text-center"
+        className="h-screen pb-5 flex flex-col items-center justify-center bg-transparent text-white text-center"
       >
+        <div className="relative">
+            <GradientBackground/>
         {/* Type Animation */}
       <TypeAnimation
         sequence={[
@@ -34,6 +37,7 @@ export default function Hero() {
       >
         Explore
       </a>
+      </div>
     </section>
   );
   }

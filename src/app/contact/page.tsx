@@ -58,13 +58,13 @@ export default function Contact() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="mb-8 bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transition-all"
+          className="mb-8 bg-purple-800 text-white px-4 py-2 rounded-full shadow-md hover:bg-purple-900 transition-all"
         >
           ← Back
         </button>
 
         {/* Heading */}
-        <h2 className="text-4xl font-extrabold text-center mb-6 text-blue-900">
+        <h2 className="text-4xl font-extrabold text-center mb-6 text-purple-950">
           Let&apos;s Connect!
         </h2>
 
@@ -90,7 +90,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your name"
-                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-blue-400 focus:ring-2"
+                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-purple-800  text-gray-600"
               />
             </div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder="Your email"
-                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-blue-400 focus:ring-2"
+                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-purple-800 text-gray-600"
               />
             </div>
 
@@ -127,8 +127,8 @@ export default function Contact() {
                 onChange={handleChange}
                 rows={4}
                 required
-                placeholder="Write something awesome!"
-                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-blue-400 focus:ring-2"
+                placeholder="Write anything! eg: i loved ur website :)"
+                className="mt-1 p-3 block w-full border rounded-md shadow-sm focus:ring-blue-400 focus:ring-2 text-gray-600"
               />
             </div>
 
@@ -137,7 +137,7 @@ export default function Contact() {
                 type="submit"
                 disabled={isSubmitting}
                 className={`${
-                  isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+                  isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-purple-800 hover:bg-purple-900"
                 } text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300`}
               >
                 {isSubmitting ? "Sending..." : "Send"}
@@ -146,7 +146,7 @@ export default function Contact() {
           </form>
 
           {responseMessage && (
-            <p className="mt-4 text-center text-sm text-blue-900">{responseMessage}</p>
+            <p className="mt-4 text-center text-sm text-purple-950">{responseMessage}</p>
           )}
         </div>
       </div>
