@@ -1,7 +1,6 @@
 
 # **Samia's Portfolio**
 
-
 #### Welcome to my new personal portfolio website! 🎨💻 This platform showcases my journey as a computer science student featuring my projects, experiences, and interests. It’s being designed to reflect my passion for creativity, technology, and user-centric design.
 ---
 ## **Features**
@@ -39,5 +38,5 @@
 
 ## **Try it Out!**
 
-You can explore the website by clicking this link: **[Samia's Portfolio](https://samiasportfolio.vercel.app)**.
+You can explore the website by clicking this link: (Best in Chrome) **[Samia's Portfolio](https://samiasportfolio.vercel.app)**.
 
